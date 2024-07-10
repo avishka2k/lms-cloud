@@ -69,13 +69,13 @@ jobs:
           aws-secret-access-key: ${{ env.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
 
-      - name: Login to AWS CodeArtifact
-        run: aws codeartifact login --tool maven --domain lms-microservices --domain-owner 975050073113 --repository lms-artifact
-        env:
-          AWS_REGION: ${{ env.AWS_REGION }}
+      # - name: Login to AWS CodeArtifact
+      #   run: aws codeartifact login --tool maven --domain lms-microservices --domain-owner 975050073113 --repository lms-artifact
+      #   env:
+      #     AWS_REGION: ${{ env.AWS_REGION }}
 
-      - name: Publish to AWS CodeArtifact
-        run: mvn -f ${{ matrix.service }}/pom.xml deploy
-        env:
-          AWS_REGION: ${{ env.AWS_REGION }}
+      # - name: Publish to AWS CodeArtifact
+      #   run: mvn -f ${{ matrix.service }}/pom.xml deploy
+      #   env:
+      #     AWS_REGION: ${{ env.AWS_REGION }}
           

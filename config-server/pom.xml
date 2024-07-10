@@ -41,6 +41,13 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	<distributionManagement>
+	<repository>
+		<id>lms-microservices-lms-artifact</id>
+		<name>lms-microservices-lms-artifact</name>
+		<url>https://lms-microservices-975050073113.d.codeartifact.ap-southeast-1.amazonaws.com/maven/lms-artifact/</url>
+	</repository>
+	</distributionManagement>
 
 	<build>
 		<plugins>
