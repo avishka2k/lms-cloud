@@ -7,7 +7,7 @@ variable "aws_region" {
 variable "user_pool_name" {
   description = "The name of the user pool"
   type        = string
-  default     = "lms-cognito-users"
+  default     = "lms-auth-service"
 }
 
 variable "user_pool_domain" {
